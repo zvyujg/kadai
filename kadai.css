@@ -1,75 +1,66 @@
-/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.header {
-  width: 100%; /* 横幅いっぱい */
-  height:50px; /* 高さ50px */
-  background-color: orange; /* 背景色orange */
+header {
+  height: 50px;
+  background-color: #ff9a4b;
 }
 
-.main-visual {
-  width: 100%; /* 横幅いっぱい */
-  height:50px; /* 高さ50px */
-  background-color: white; /* 背景色white */
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
 }
 
-.main-visual-content {
-  width: 40%; /* 横幅40% */  
-  height: 300px; /* 親の高さに揃える */
+.step-box {
+  width: 300px;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
 }
 
-.main {
-  width: 100%; /* 横幅いっぱい */
-  height: 1400px; /* 高さ1400px（多めに設定） */
-  background-color: #EEEEEE; /* 背景色#EEEEEE */
+.step-box:last-child {
+  margin-right: 0;
 }
 
-.flex_test-box {
-    background-color: #EEEEEE;     /* 背景色#EEEEEE */
-    padding:  20px;             /* 余白指定 */
+.step-img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
 }
- 
-.flex_test-item {
-    padding: 10px;
-    color:  #fff;               /* 文字色 */
-    margin:  10px;              /* 外側の余白 */
-    border-radius:  5px;        /* 角丸指定 */
+
+.step-img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
 }
- 
-.flex_test-item:nth-child(1) {
-    background-color: #EEEEEE; /* 背景色#EEEEEE */
-    background-image: url(img/flow01.png);
-    flex-basis:  1400px;         /* 幅指定 */
-    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center; /* 背景画像を中央に配置 */
+
+.step-img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
 }
- 
-.flex_test-item:nth-child(2) {
-    background-color:  #EEEEEE; /* 背景色#EEEEEE */
-    background-image: url(img/flow02.png);
-    flex-basis:  1400px;         /* 幅指定 */
-    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center; /* 背景画像を中央に配置 */
+
+.step-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
 }
- 
-.flex_test-item:nth-child(3) {
-    background-color: #EEEEEE; /* 背景色#EEEEEE*/
-    background-image: url(img/flow03.png);
-    flex-basis:  1400px;         /* 幅指定 */
-    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center; /* 背景画像を中央に配置 */
+
+.title {
+  margin: 15px 0 5px;
 }
- 
-.flex_test-box {
-    display: flex;              /* フレックスボックスにする */
-}
-  
-  .footer {
-  width: 100%; /* 横幅いっぱい */
-  height: 50px; /* 高さ50px */
-  background-color: gray; /* 背景色gray */
+
+footer {
+  height: 50px;
+  background-color: #aaa;
 }
